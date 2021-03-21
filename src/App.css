@@ -1,38 +1,23 @@
-.App {
-  text-align: center;
+h1 {
+  @apply font-bold uppercase text-blue-400;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.denominator {
+  @apply underline font-medium;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.input-field {
+  @apply flex flex-col mb-2;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.text-field {
+  @apply py-3 px-4 mb-2 leading-5 appearance-none block border-2 rounded-md;
 }
 
-.App-link {
-  color: #61dafb;
+.error-message {
+  @apply text-red-600 italic -mt-2 mb-2;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+label {
+  @apply font-medium mb-1;
 }
