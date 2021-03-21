@@ -1,5 +1,4 @@
 import React from 'react';
-// import ReactDOM from 'react-dom';
 import './App.css';
 import promo from "./promo.json";
 import logo from "./assets/logo.png"
@@ -73,7 +72,12 @@ class App extends React.Component {
       this.setState({agreeConditionsError: 'You must agree to the terms and conditions'});
       event.preventDefault();
     } else {
-      alert('Successfully registered with email: ' + this.state.email);
+      alert(`Successfully registered!\n
+      Firstname: ${this.state.firstname}\n
+      Lastname: ${this.state.Lastname}\n
+      Email: ${this.state.email}\n
+      Status: ${this.state.status}\n
+      Subscribed to newsletter: ${this.state.newsLetterSub ? 'YES' : 'NO'}`)
     }
   }
 
